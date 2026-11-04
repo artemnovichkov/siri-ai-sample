@@ -2,9 +2,9 @@
 
 <img src=".github/assets/icon.png" width="120" alt="Larder app icon">
 
-# Larder
+# Siri AI Sample
 
-A recipe app that shows how to integrate with Siri AI and Foundation Models on iOS 27.
+Larder, a recipe app that shows how to integrate with Siri AI and Foundation Models on iOS 27.
 
 ![iOS 27.3](https://img.shields.io/badge/iOS-27.3-000000?logo=apple&logoColor=white)
 ![Xcode 27.3](https://img.shields.io/badge/Xcode-27.3-147EFB?logo=xcode&logoColor=white)
