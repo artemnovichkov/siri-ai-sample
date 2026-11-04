@@ -159,6 +159,10 @@ On a device, run the `LarderSiriEvaluations` scheme (⌘U) and keep the device u
 - [Foundation Models](https://developer.apple.com/documentation/foundationmodels)
 - Xcode 27.3 guides: `Xcode.app/Contents/PlugIns/IDEIntelligenceChat.framework/Versions/A/Resources/siri-*`
 
+## Author
+
+Artem Novichkov, https://artemnovichkov.com/
+
 ## License
 
-Larder is available under the [MIT License](LICENSE).
+The project is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
