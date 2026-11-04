@@ -1,0 +1,37 @@
+{
+  "fill" : {
+    "automatic-gradient" : "display-p3:0.93,0.27,0.13,1.0"
+  },
+  "groups" : [
+    {
+      "name" : "Lid",
+      "layers" : [
+        { "name" : "03-lid", "image-name" : "03-lid.svg", "glass" : true }
+      ],
+      "shadow" : { "kind" : "neutral", "opacity" : 0.5 },
+      "specular" : true,
+      "translucency" : { "enabled" : false, "value" : 0.5 }
+    },
+    {
+      "name" : "Contents",
+      "layers" : [
+        { "name" : "02-contents", "image-name" : "02-contents.svg", "glass" : true }
+      ],
+      "shadow" : { "kind" : "layer-color", "opacity" : 0.5 },
+      "specular" : true,
+      "translucency" : { "enabled" : false, "value" : 0.5 }
+    },
+    {
+      "name" : "Jar",
+      "layers" : [
+        { "name" : "01-jar", "image-name" : "01-jar.svg", "glass" : true, "opacity" : 0.9 }
+      ],
+      "shadow" : { "kind" : "neutral", "opacity" : 0.5 },
+      "specular" : true,
+      "translucency" : { "enabled" : true, "value" : 0.45 }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : "shared"
+  }
+}

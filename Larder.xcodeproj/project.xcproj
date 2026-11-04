@@ -1,0 +1,121 @@
+{
+  "default-configuration": "Release",
+  "configurations": [
+    "Debug",
+    "Release",
+  ],
+  "localizations": {
+    "development": "en",
+    "supported": [
+      "Base",
+    ],
+  },
+  "files": [
+    {
+      "kind": "group",
+      "name": "Products",
+      "children": [
+        { "path": "<PRODUCTS>/Larder.app", "id": "06F6A635309BA18A00989AA9", "type": "wrapper.application", "index": false },
+        { "path": "<PRODUCTS>/LarderIntentTests.xctest", "id": "061548E3309BA195004DA55D", "type": "wrapper.cfbundle", "index": false },
+        { "path": "<PRODUCTS>/LarderSiriEvaluations.xctest", "id": "063754F2309BA19D007DD4F1", "type": "wrapper.cfbundle", "index": false },
+      ],
+    },
+    { "kind": "folder", "path": "Larder", "target-membership": [ "Larder" ] },
+    { "kind": "folder", "path": "LarderIntentTests", "target-membership": [ "LarderIntentTests" ] },
+    { "kind": "folder", "path": "LarderSiriEvaluations", "target-membership": [ "LarderSiriEvaluations" ] },
+  ],
+  "targets": [
+    {
+      "name": "Larder",
+      "id": "06F6A634309BA18A00989AA9",
+      "product": "Products/Larder.app",
+      "product-type": "application",
+      "build-phases": [
+        "compile-sources",
+        "frameworks",
+        "resources",
+      ],
+      "build-settings": {
+        "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
+        "ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME": "AccentColor",
+        "CURRENT_PROJECT_VERSION": "1",
+        "GENERATE_INFOPLIST_FILE": "YES",
+        "INFOPLIST_KEY_CFBundleDisplayName": "Larder",
+        "INFOPLIST_KEY_UILaunchScreen_Generation": "YES",
+        "INFOPLIST_KEY_UISupportedInterfaceOrientations": "UIInterfaceOrientationPortrait",
+        "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad": "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight",
+        "LD_RUNPATH_SEARCH_PATHS": [
+          "$(inherited)",
+          "@executable_path/Frameworks",
+        ],
+        "MARKETING_VERSION": "1.0",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.artemnovichkov.Larder",
+        "PRODUCT_NAME": "$(TARGET_NAME)",
+      },
+    }, {
+      "name": "LarderIntentTests",
+      "id": "061548E2309BA195004DA55D",
+      "product": "Products/LarderIntentTests.xctest",
+      "product-type": "bundle.ui-testing",
+      "dependencies": [
+        "Larder",
+      ],
+      "build-phases": [
+        "compile-sources",
+        "frameworks",
+      ],
+      "build-settings": {
+        "GENERATE_INFOPLIST_FILE": "YES",
+        "LD_RUNPATH_SEARCH_PATHS": [
+          "$(inherited)",
+          "@executable_path/Frameworks",
+          "@loader_path/Frameworks",
+        ],
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.artemnovichkov.LarderIntentTests",
+        "PRODUCT_NAME": "$(TARGET_NAME)",
+        "TEST_TARGET_NAME": "Larder",
+      },
+    }, {
+      "name": "LarderSiriEvaluations",
+      "id": "063754F1309BA19D007DD4F1",
+      "product": "Products/LarderSiriEvaluations.xctest",
+      "product-type": "bundle.ui-testing",
+      "dependencies": [
+        "Larder",
+      ],
+      "build-phases": [
+        "compile-sources",
+        "frameworks",
+      ],
+      "build-settings": {
+        "GENERATE_INFOPLIST_FILE": "YES",
+        "LD_RUNPATH_SEARCH_PATHS": [
+          "$(inherited)",
+          "@executable_path/Frameworks",
+          "@loader_path/Frameworks",
+        ],
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.artemnovichkov.LarderSiriEvaluations",
+        "PRODUCT_NAME": "$(TARGET_NAME)",
+        "SUPPORTED_PLATFORMS": "iphoneos",
+        "TEST_TARGET_NAME": "Larder",
+      },
+    },
+  ],
+  "build-settings": {
+    "ALWAYS_SEARCH_USER_PATHS": "NO",
+    "CODE_SIGN_STYLE": "Automatic",
+    "DEBUG_INFORMATION_FORMAT[config=Debug]": "dwarf",
+    "DEBUG_INFORMATION_FORMAT[config=Release]": "dwarf-with-dsym",
+    "ENABLE_TESTABILITY[config=Debug]": "YES",
+    "ENABLE_USER_SCRIPT_SANDBOXING": "YES",
+    "IPHONEOS_DEPLOYMENT_TARGET": "27.3",
+    "ONLY_ACTIVE_ARCH[config=Debug]": "YES",
+    "SDKROOT": "iphoneos",
+    "SWIFT_ACTIVE_COMPILATION_CONDITIONS[config=Debug]": "DEBUG",
+    "SWIFT_COMPILATION_MODE[config=Release]": "wholemodule",
+    "SWIFT_OPTIMIZATION_LEVEL[config=Debug]": "-Onone",
+    "SWIFT_OPTIMIZATION_LEVEL[config=Release]": "-O",
+    "SWIFT_VERSION": "6.0",
+    "TARGETED_DEVICE_FAMILY": "1,2",
+  },
+}
